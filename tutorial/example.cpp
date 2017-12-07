@@ -4,7 +4,7 @@
 #include<random>
 #include<queue>
 #include<thread>
-#include"../header/CThreadPool.hpp"
+#include"../ThreadPool/CThreadPool.hpp"
 
 namespace
 {
