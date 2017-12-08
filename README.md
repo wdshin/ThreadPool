@@ -1,7 +1,7 @@
 # Changed Source Tree
 
 * Changed Source Tree Structure ( 2017.12.8 )
-* I want to test them for production
+* I(https://github.com/wdshin) want to test them for production
 
 # Contents
 [Introduction](https://github.com/Fdhvdu/ThreadPool/blob/master/README.md#introduction)<br>
