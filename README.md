@@ -1,3 +1,8 @@
+# Changed Source Tree
+
+* Changed Source Tree Structure ( 2017.12.8 )
+* I want to test them for production
+
 # Contents
 [Introduction](https://github.com/Fdhvdu/ThreadPool/blob/master/README.md#introduction)<br>
 [Class view](https://github.com/Fdhvdu/ThreadPool/blob/master/README.md#class-view)<br>
@@ -46,33 +51,18 @@ See the [directory](performance comparison/) for more details.
 VC++ 14.2<br>
 or any compiler which supports C++14
 # How to compile
-You have to download [my lib](https://github.com/Fdhvdu/lib)<br>
-The directory should be look like
 
-	-ThreadPool---header
-	|            -performance comparison
-	|            -src
-	|            -tutorial
-	|            -LICENSE
-	|            -README.md
-	|
-	-lib----------header
-	             -src
-	             -tutorial
-	             -LICENSE
-	             -README.md
-Don't forget to compile lib/src/CScopeGuard.cpp.
+TODO
+
 # About compilation errors
 Q: My compiler doesn't support C++14<br>
 A: Get a newer compiler version, such as GCC 5.3.0 or VC++ 14.2 (inside Visual Studio Community 2015 Update 2)<br><br>
-Q: Other problems<br>
-A: See [How to compile](https://github.com/Fdhvdu/ThreadPool/blob/master/README.md#how-to-compile) or email me
+
 # Tutorial
-I provide [example.cpp](tutorial/example.cpp) and [example_ret.cpp](tutorial/example_ret.cpp) to help you understand how to use this powerful thread pool<br>
-To use [example.cpp](tutorial/example.cpp):<br>
-g++ -std=c++14 tutorial/example.cpp src/* ../lib/src/CScopeGuard.cpp<br>
-To use [example_ret.cpp](tutorial/example_ret.cpp):<br>
-g++ -std=c++14 tutorial/example_ret.cpp src/IThreadPoolItemBase.cpp ../lib/src/CScopeGuard.cpp
+
+TODO
+
 # Future work
 replace std::bind in CThreadPool::add, CThreadPool::add_and_detach and CThreadPool_Ret::add with C++17 std::apply<br>
 work stealing
+
