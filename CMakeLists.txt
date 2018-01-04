@@ -1,0 +1,49 @@
+cmake_minimum_required(VERSION 3.9)
+project(ThreadPool)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_library(ThreadPool
+        ThreadPool/algorithm/algorithm.hpp
+        ThreadPool/algorithm/algorithm_thr.hpp
+        ThreadPool/algorithm/exchange_endpoint_by_swapping.hpp
+        ThreadPool/experimental/CSignal_guard.cpp
+        ThreadPool/math/combination.hpp
+        ThreadPool/math/math.hpp
+        ThreadPool/thread/Atomic_stack.hpp
+        ThreadPool/thread/CAtomic_stack.hpp
+        ThreadPool/thread/CBasic_ts_container.hpp
+        ThreadPool/thread/CLock_bounded_queue.hpp
+        ThreadPool/thread/CLock_forward_list.hpp
+        ThreadPool/thread/CLock_queue.hpp
+        ThreadPool/thread/CLock_unordered_map.hpp
+        ThreadPool/thread/CLock_unordered_set.hpp
+        ThreadPool/thread/CSemaphore.hpp
+        ThreadPool/thread/CSpin_mutex.hpp
+        ThreadPool/thread/CTask.hpp
+        ThreadPool/thread/CWait_bounded_queue.hpp
+        ThreadPool/thread/Lock_queue.hpp
+        ThreadPool/thread/Node.hpp
+        ThreadPool/thread/tag.hpp
+        ThreadPool/TMP/experimental/TMP_util.hpp
+        ThreadPool/tool/experimental/CSignal_guard.hpp
+        ThreadPool/tool/Boolean.hpp
+        ThreadPool/tool/CAlloc_obj.hpp
+        ThreadPool/tool/CChrono_timer.hpp
+        ThreadPool/tool/CInsert_iterator.hpp
+        ThreadPool/tool/CScopeGuard.hpp
+        ThreadPool/tool/CUnique_obj.hpp
+        ThreadPool/tool/CUTF8_reader.hpp
+        ThreadPool/tool/show.hpp
+        ThreadPool/CScopeGuard.cpp
+        ThreadPool/CSpin_mutex.cpp
+        ThreadPool/CThreadPool.cpp
+        ThreadPool/CThreadPool.hpp
+        ThreadPool/CThreadPool_Ret.hpp
+        ThreadPool/CThreadPoolItem.cpp
+        ThreadPool/CThreadPoolItem.hpp
+        ThreadPool/CThreadPoolItem_Ret.hpp
+        ThreadPool/IThreadPoolItemBase.cpp
+        ThreadPool/IThreadPoolItemBase.hpp
+        ThreadPool/IThreadPoolItemExecutor.cpp
+        ThreadPool/IThreadPoolItemExecutor.hpp)
